@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insurance4"
+    android:background="@drawable/registerbg">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="384dp"
+        android:layout_height="93dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Critical Illness Insurance"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBack4"
+        android:layout_width="146dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/input_bg"
+        android:text="BACK"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextLTDTextMultiLine"
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="There are a number of lifestyle-related diseases that are on the rise. Health issues such as cancer, stroke, kidney failure and cardiac diseases can be very expensive to deal with and manage long-term. This is precisely why critical illness insurance policies have been created. They can either be purchased as a rider or add-on with your regular health insurance plan or separately as their own plan. These policies offer cover for very specific issues and often provide claim payouts as a single lump sum payment after the diagnosis of a critical illness."
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1"
+        app:layout_constraintVertical_bias="0.525" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

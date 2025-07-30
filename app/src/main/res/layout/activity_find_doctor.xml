@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindDoctorActivity"
+    android:background="@drawable/homebg">
+
+    <TextView
+        android:id="@+id/titleDoctors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="MediLink Doctors"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleDoctors"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFamilyPhy"
+                android:layout_width="match_parent"
+                android:layout_height="0.9in"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/khaki"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/familyphy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1.1in"
+                    android:paddingTop="30dp"
+                    android:text="Family Physicians"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDietician"
+                android:layout_width="match_parent"
+                android:layout_height="0.9in"
+                app:cardBackgroundColor="@color/khaki"
+                android:layout_margin="8dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/cadet_blue"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/dietician" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1.1in"
+                    android:paddingTop="55dp"
+                    android:text="Dietician"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDentist"
+                android:layout_width="match_parent"
+                android:layout_height="0.9in"
+                app:cardBackgroundColor="@color/khaki"
+                android:layout_margin="8dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/cadet_blue"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/denti" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1.1in"
+                    android:paddingTop="55dp"
+                    android:text="Dentist"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSurgeon"
+                android:layout_width="match_parent"
+                android:layout_height="0.9in"
+                app:cardBackgroundColor="@color/khaki"
+                android:layout_margin="8dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/cadet_blue"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/surgeons" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1.1in"
+                    android:paddingTop="55dp"
+                    android:text="Surgeon"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDiabetologist"
+                android:layout_width="match_parent"
+                android:layout_height="0.9in"
+                app:cardBackgroundColor="@color/khaki"
+                android:layout_margin="8dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/dibitologist" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1.1in"
+                    android:paddingTop="55dp"
+                    android:text="Diabetologist"
+                    android:textAlignment="center"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="195dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="Back"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
